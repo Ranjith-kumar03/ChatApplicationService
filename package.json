@@ -2,9 +2,10 @@
   "name": "chatproject",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
+  "bin": "app.js",
   "scripts": {
-        "start": "node app.js",
+    "start": "node app.js",
     "ranjith": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +13,13 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
+    "ip": "^1.1.5",
     "nodemon": "^2.0.15",
     "socket.io": "^4.4.1"
+  },
+  "pkg": {
+    "scripts": "ranjith/**/*.js",
+    "assets": "public/**/*",
+    "outputPath": "dist"
   }
 }
