@@ -2,11 +2,11 @@
   "name": "chatproject",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-  "bin": "app.js",
+  "main": "index.js",
+  "bin": "index.js",
   "scripts": {
-    "start": "node app.js",
-    "ranjith": "nodemon app.js",
+    "start": "node index.js",
+    "ranjith": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +14,7 @@
   "dependencies": {
     "express": "^4.17.2",
     "ip": "^1.1.5",
+    "node-windows": "^1.0.0-beta.6",
     "nodemon": "^2.0.15",
     "socket.io": "^4.4.1"
   },
@@ -21,5 +22,8 @@
     "scripts": "ranjith/**/*.js",
     "assets": "public/**/*",
     "outputPath": "dist"
+  },
+  "devDependencies": {
+    "electron": "^17.1.0"
   }
 }

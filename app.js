@@ -3,6 +3,8 @@ const path = require('path')
 const app =express()
 const PORT = process.env.PORT || 4000
 
+
+
 var ip = require("ip")
 let ipaddress = `http://${ip.address()}:4000`
 console.log( `Please Use this address to chat with me from PC Laptop or IPad - http://${ip.address()}:4000` );
@@ -12,6 +14,8 @@ const io = require('socket.io')(server)
 app.use(express.static(path.join(__dirname,'public')))
 
 let socketConnection = new Set();
+
+
 
 io.on('connection',onConnected)
 
@@ -43,3 +47,8 @@ function onConnected(socket)
             socket.broadcast.emit("chat-feedback",data)
     })
 }
+console.log("see the path",path.join(__dirname,"public", "chat.bat"))
+// exec(path.join(__dirname,"public", "chat.bat"), function(error, stdout, stderr) {
+//            console.log(stdout);
+//         });
+

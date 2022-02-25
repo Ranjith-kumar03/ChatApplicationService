@@ -1,0 +1,14 @@
+2022-02-26 00:57:56 - Stopping chatservice.exe
+2022-02-26 00:57:56 - ProcessKill 15180
+2022-02-26 00:57:56 - Found child process: 12876 Name: conhost.exe
+2022-02-26 00:57:56 - Found child process: 2872 Name: node.exe
+2022-02-26 00:57:56 - Stopping process 12876
+2022-02-26 00:57:56 - Send SIGINT 12876
+2022-02-26 00:57:57 - SIGINT to 12876 failed - Killing as fallback
+2022-02-26 00:57:57 - Stopping process 2872
+2022-02-26 00:57:57 - Send SIGINT 2872
+2022-02-26 00:57:57 - SIGINT to 2872 failed - Killing as fallback
+2022-02-26 00:57:57 - Stopping process 15180
+2022-02-26 00:57:57 - Send SIGINT 15180
+2022-02-26 00:57:57 - SIGINT to 15180 failed - Killing as fallback
+2022-02-26 00:57:57 - Finished chatservice.exe
